@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contato</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--- links dos ícones box --->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--- link dos ícones remix --->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!--- link das fontes do Google --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="right-content">
+            <a href="../index.html" class="nav-btn">Início</a>
+
+        </div>
+    </header>
+    <div class="container">
+        <form class="contact-form" method="post" aria-describedby="form-description">
+            <h1>Entre em Contato</h1>
+            <p id="form-description">Formulário demonstrativo de um projeto de estudos. Nenhuma mensagem será enviada ou armazenada.</p>
+            <div class="infield">
+                <input type="text" id="name" name="name" required>
+                <label for="name">Nome</label>
+
+            </div>
+            <div class="infield">
+                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail</label>
+
+            </div>
+            <div class="infield">
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Mensagem</label>
+
+            </div>
+            <button type="submit">Testar formulário</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+    <script src="./script.js" defer></script>
+</body>
+</html>

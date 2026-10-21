@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Site Coffee Shop</title>
+        <title>Coffee Shop | Cafeteria conceitual</title>
+        <meta name="description" content="Projeto de estudos de uma cafeteria fictícia, com interface responsiva e página de contato demonstrativa.">
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <!--- links dos ícones box --->
@@ -26,20 +27,18 @@
 
         <!--- cabeçalho --->
         <header>
-            <a href="file:///E:/coffee/index.html" class="logo">
-                <img src="img\logo.png">
+            <a href="./index.html" class="logo">
+                <img src="img/logo.png" alt="Coffee Shop — início">
             </a>
 
-            <ul class="navlist">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Assinatura</a></li>
-                <li><a href="#">Eventos</a></li>
+            <nav aria-label="Navegação principal"><ul class="navlist" id="primary-navigation">
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="./contato/index.html">Contato</a></li>
-            </ul>
+            </ul></nav>
 
             <div class="right-content">
-                <a href="http://localhost/cadastro/index.php#" class="nav-btn">Sair</a>
-                <div class="bx bx-menu" id="menu-icon"></div>
+                <a href="./contato/index.html" class="nav-btn">Contato</a>
+                <button type="button" id="menu-icon" aria-label="Abrir menu" aria-controls="primary-navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
 
             </div>
         </header>
@@ -48,37 +47,32 @@
         <section class="hero">
             <div class="hero-text">
                 <h5 data-aos="fade-right" data-aos-duration="1400">#Café para dias quentes</h5>
-                <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">- Bem Vindo</h1>
+                <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Bem-vindo</h1>
                 <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Aumente sua produtividade e melhore seu humor com um copo de café pela manhã. O café tem um efeito estimulante.</p>
 
                 <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
-                    <a href="#" class="btn">Peça Agora</a>
-                    <a href="#" class="price">
-                        R$16,00 | <span>Preço Regular</span>
-                    </a>
+                    <a href="./contato/index.html" class="btn">Conheça o projeto</a>
+                    <div class="price">
+                        R$16,00 | <span>Preço ilustrativo</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="hero-imag" data-aos="zoom-in" data-aos-duration="1400">
-                <img src="img/hero.png">
+            <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
+                <img src="img/hero.png" alt="Bebida de café apresentada no projeto" width="600" height="600">
             </div>
         </section>
 
-        <div class="icons">
-            <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600"><i class="ri-instagram-fill"></i></a>
-            <a href="https://www.youtube.com/@issackxcoffee" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700"><i class="ri-youtube-fill"></i></a>
-            <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800"><i class="ri-twitter-fill"></i></a>
-        </div>
-
-        <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
-            <a href="#">
-                <i class="ri-scroll-to-bottom-line"></i>
-                Role para baixo
-            </a>
-        </div>
+        <section id="sobre" class="about-section" aria-labelledby="about-title">
+            <p class="eyebrow">Uma pausa para o café</p>
+            <h2 id="about-title">Sobre o Coffee Shop</h2>
+            <p>Uma cafeteria fictícia criada como projeto de estudos de HTML, CSS e JavaScript. Esta experiência explora apresentação visual, navegação e adaptação a diferentes telas.</p>
+            <p>Os produtos e valores são ilustrativos. Não há pedidos, pagamentos ou cadastro de clientes neste site.</p>
+        </section>
+        <footer class="site-footer">Coffee Shop · Projeto de estudos por Thayná Tamor</footer>
 
         <!--- link do js --->
-        <script src="js/script.js"></script>
+        <script src="./script.js" defer></script>
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
